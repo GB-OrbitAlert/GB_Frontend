@@ -1,0 +1,18 @@
+.title {
+    color: var(--primary, --secondary);
+    font-family: var(--title);
+    font-size: var(--title-size);
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+}
+
+.text {
+    color: var(#5C5F61);
+    font-family: var(--text);
+    font-size: var(--text-size);
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+}
+

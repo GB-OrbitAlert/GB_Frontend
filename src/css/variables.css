@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+    --primary: #0f172a;
+    --secondary: #0d9488;
+    --tertiary: #2dd4bf;
+    --neutral: #f8fafc; 
+
+    --title: 'Arimo', sans-serif;
+    --title-size: 46px;
+
+    --text: 'Nunito', Roboto, Calibri;
+    --text-size: 30px;
+}
