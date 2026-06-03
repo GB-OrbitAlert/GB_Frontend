@@ -1,1 +1,22 @@
+.container {
+    width: 100px;
+    max-width: var(--container);
+    margin-inline: auto;
+    padding-inline: 24px;
+}
 
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 22px;
+    border-radius: var(--radius-menor);
+    font-size: var(--fs-sm);
+    font-weight: 600;
+    transition: background var(--t-base), color var(--t-base), border-color var(--t-base), transform var(-t-fast);
+}
+
+.btn:active {
+    transform: translateY(1px);
+}

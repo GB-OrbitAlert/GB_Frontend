@@ -5,8 +5,12 @@
     --primary: #0f172a;
     --secondary: #0d9488;
     --tertiary: #2dd4bf;
-    --neutral: #f8fafc; 
+    
     --dark: #000000;
+    --dark2: #191C1E;
+    --neutral-text: #444749; 
+    --neutral-text2: #2D3133;
+    --neutral-border: #fbecec;
 
     --font-base: "Arimo", sans-serif, system-ui;
     --font-display: "Nunito", Roboto, Calibri;
