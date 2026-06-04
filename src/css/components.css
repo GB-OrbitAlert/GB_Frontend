@@ -57,5 +57,5 @@
 .card p {
     font-size: var(--fs-sm);
     color: var(--neutral-text2);
-    font-family: var(--font-display);
+    font-family: var(--font-text);
 }

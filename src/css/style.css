@@ -2,8 +2,8 @@
     position: sticky;
     top: 0;
     z-index: 50;
-    background-color: var(--neutral1);
-    border-bottom: 1px solid var(--neutral-brder);
+    background-color: transparent;
+    border-bottom: 1px solid var(--neutral-border);
     backdrop-filter: blur(10px);
     box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1);
 }
@@ -25,7 +25,7 @@
 
 .titulo {
     color: var(--primary);
-    font-family: var(--font-base);
+    font-family: var(--font-title);
     font-size: var(--fs-xl);
     padding: 20px ;
     
@@ -138,4 +138,43 @@
 
 .sec-header {
     text-align: center;
+}
+
+.objectives {
+    background-color: var(--primary);
+    color: #fff;
+    padding: var(--section-padY);
+}
+
+.objectives .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 56px;
+    align-items: center;
+}
+
+.objectives h2 {
+    font-size: var(--fs-2xl);
+    margin-bottom: 28px;
+}
+
+.imagem-obj {
+    width: 100%;
+    aspect-ratio: 4/3;
+    overflow: hidden;
+}
+
+.imagem-obj img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.obj-item {
+    padding: 25px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.obj-item:last-child {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }

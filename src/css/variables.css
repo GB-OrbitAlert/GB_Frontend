@@ -14,8 +14,8 @@
     --background: #EEF0FF;
     --neutral-card: #E0E3E5;
 
-    --font-base: "Arimo", sans-serif, system-ui;
-    --font-display: "Nunito", Roboto, Calibri;
+    --font-title: "Arimo", sans-serif, system-ui;
+    --font-text: "Nunito", Roboto, Calibri;
 
     --fs-xs: 12px;
     --fs-sm: 14px;

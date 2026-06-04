@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  font-family: var(--font-base);
+  font-family: var(--font-title);
   font-size: var(--fs-base);
   line-height: 1.6;
   color: var(--neutral-text);
@@ -47,7 +47,7 @@ button {
 
 h1, h2, h3, h4 {
   line-height: 1.2;
-  font-family: var(--font-display);
+  font-family: var(--font-text);
   font-weight: 700;
   letter-spacing: -0.02em;
 }
