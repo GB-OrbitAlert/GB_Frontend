@@ -91,3 +91,32 @@
     width: 100%;
     height: auto;
 }
+
+.problem {
+    background-color: var(--background);
+    padding: var(--section-padY);
+}
+
+.problem .container {
+    display: grid;
+    grid-template-columns: 1fr 1.15fr;
+    gap: 48px;
+    align-items: center;
+}
+
+.problem h2 {
+    font-size: var(--fs-2xl);
+    margin-bottom:16px;
+}
+
+.problem p {
+    color: var(--neutral-text2);
+    font-size: var(--fs-sm);
+    max-width: 360px;
+}
+
+.problem_cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}

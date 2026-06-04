@@ -34,3 +34,28 @@
     border-radius: var(--radius-menor);
     border-color: var(--primary);
 }
+
+.card {
+    background-color: var(--neutral-card);
+    border: 1px solid var(--neutral-border);
+    border-radius: var(--radius);
+    padding: 28px;
+    box-shadow: var(--shadow-menor);
+    transition: transform var(--t-base), box-shadow var(--t-base);
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-medio);
+}
+
+.card h3 {
+    font-size: var(--fs-lg);
+    margin-bottom: 8px;
+}
+
+.card p {
+    font-size: var(--fs-sm);
+    color: var(--neutral-text2);
+    font-family: var(--font-display);
+}

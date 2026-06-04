@@ -11,7 +11,8 @@
     --neutral-text: #444749; 
     --neutral-text2: #2D3133;
     --neutral-border: #fbecec;
-    --neutral: #ffff;
+    --background: #EEF0FF;
+    --neutral-card: #E0E3E5;
 
     --font-base: "Arimo", sans-serif, system-ui;
     --font-display: "Nunito", Roboto, Calibri;
