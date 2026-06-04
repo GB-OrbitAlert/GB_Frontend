@@ -120,3 +120,22 @@
     grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
+
+.technology {
+    padding: var(--section-padY) 0;
+}
+
+.cards-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    padding: 60px;
+}
+
+.technology .card {
+    text-align: center;
+}
+
+.sec-header {
+    text-align: center;
+}

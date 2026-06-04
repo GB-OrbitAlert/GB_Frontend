@@ -10,6 +10,9 @@
 
     <link href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css" rel="stylesheet">
     <link href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css" rel="stylesheet">
+    <link href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css" rel="stylesheet">
+    <link href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css" rel="stylesheet">
+    <link href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css" rel="stylesheet">
     
     <title>OrbitAlert</title>
 </head>
@@ -57,15 +60,42 @@
 
             <div class="problem_cards">
                 <article class="card">
-                    <li class="bx bx-announcement"></i>
+                    <i class="bx bx-announcement"></i>
                     <h3>Alertas antes do desastre</h3>
                     <p>Sensores no campo detectam a subida do rio e condições de queimada em tempo real, acionando o aviso sonoro e visual na base comunitária antes que a situação se torne irreversível.</p>
                 </article>
 
                 <article class="card">
-                    <li class="bx bx-satellite-dish"></i>
+                    <i class="bx bx-satellite-dish"></i>
                     <h3>Dados do espaço, ação no chão</h3>
                     <p>Satélites da NASA e do INPE ampliam o alcance do sistema, cruzando dados locais com focos de incêndio e eventos climáticos detectados do espaço para calcular o risco com precisão.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="technology" id="tecnologia">
+        <div class="container">
+            <div class="sec-header">
+                <h2>Técnologia do <span class="degrade">OrbitAlert</span></h2>
+                <p>Hardware inteligente, comunicação sem fio e inteligência satelital</p>
+            </div>
+
+            <div class="cards-3">
+                <article class="card">
+                    <i class="bx bx-broadcast"></i>
+                    <h3>Transmissor - Unidade de campo</h3>
+                    <p>Instalado próximo a rios e áreas de risco, o transmissor usa um ESP-32 com sensores DHT22, HC-SR04 e sensor de nível d'água para medir continuamente as condições do ambiente. Os dados são classificados localmente e enviados a cada 5 segundos via módulo NRF24L01.</p>
+                </article>
+                <article class="card">
+                    <i class="bx bx-signal-5"></i>
+                    <h3>Receptor - Unidade de base</h3>
+                    <p>Posicionado em escolas ou postos comunitários, o receptor opera com um ESP-32 conectado a um display TFT ST7789 que exibe o nível de alerta em cores — verde, amarelo, laranja ou vermelho piscante. Em situações críticas, um buzzer é acionado automaticamente.</p>
+                </article>
+                <article class="card">
+                    <i class="bx bx-code"></i>
+                    <h3>Software Python</h3>
+                    <p>Rodando em um computador na base, o software consome APIs gratuitas da NASA FIRMS, NASA EONET e Open-Meteo para calcular o risco regional por meio de um modelo matemático exponencial. Os resultados são salvos em histórico e podem ser exportados como relatório com gráficos.</p>
                 </article>
             </div>
         </div>
