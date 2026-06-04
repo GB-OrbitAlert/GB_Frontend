@@ -59,3 +59,14 @@
     color: var(--neutral-text2);
     font-family: var(--font-text);
 }
+
+.benefits h4 {
+    font-size: var(--fs-base);
+    margin-bottom: 4px;
+    color: var(--primary);
+}
+
+.benefits p {
+    font-size: var(--fs-sm);
+    color: var(--neutral-text2);
+}

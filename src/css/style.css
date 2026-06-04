@@ -294,3 +294,50 @@
     grid-template-columns:  1fr 1fr;
     gap: 20px;
 }
+
+.beneficios {
+    padding: var(--section-padY) 20px;
+    background-color: var(--background);
+}
+
+.bene-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 32px;
+    margin-bottom: 48px;
+}
+
+.bene-header h2 {
+    font-size: var(--fs-2xl);
+    font-family: var(--font-title);
+    margin-bottom: 8px;
+    color: var(--primary);
+}
+
+.bene-header p {
+    color: var(--neutral-text);
+    font-size: var(--fs-base);
+    max-width: 420px;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.beneficios .benefits {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background: var(--neutral-card);
+    border-radius: 14px;
+    padding: 24px 20px;
+    border: 0.5px solid rgba(0, 0, 0 ,0.08);
+}
+
+.beneficios .benefits h4 {
+    margin-bottom: 6px;
+}
+
