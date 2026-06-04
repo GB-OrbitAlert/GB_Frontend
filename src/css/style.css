@@ -155,7 +155,7 @@
 
 .objectives {
     background-color: var(--primary);
-    color: #fff;
+    color: var(--neutral);
     padding: var(--section-padY);
 }
 
@@ -275,7 +275,7 @@
 
 .aucard-right {
     background-color: var(--dark2);
-    color: #fff;
+    color: var(--neutral);
 
 }
 
@@ -388,4 +388,36 @@
     background: linear-gradient(160deg, #e9e2d6 0%, #cbb9a0 100%);
     display: grid;
     place-items: center;
+}
+
+.footer {
+    background-color: var(--primary);
+    color: rgba(255, 255, 255, 0.7);
+    padding: 32px 0;
+    font-size: var(--fs-xs);
+}
+
+.footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.footer-nome {
+    font-family: var(--font-title);
+    font-weight: 700;
+    font-size: var(--fs-base);
+    color: var(--neutral);
+}
+
+.footer-copy {
+    margin-top: 4px;
+}
+
+.footer-membros {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
 }

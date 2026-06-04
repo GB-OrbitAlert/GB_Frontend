@@ -23,7 +23,7 @@
 
 .btn--primary {
     background-color: var(--secondary);
-    color: #fff;
+    color: var(--neutral);
 }
 
 .btn--secondary {
