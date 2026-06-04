@@ -20,186 +20,203 @@
     
     <title>OrbitAlert</title>
 </head>
+
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="box">
-                <a href="#hero" class="home">
-                    <span class="titulo">OrbitAlert</span>
-                </a>
-            </div>
-            <nav class="nav">
-                <a href="#problema">Problema</a>
-                <a href="#tecnologia">Tecnologia</a>
-                <a href="#objetivos">Objetivos</a>
-                <a href="#audiencia">Audiência</a>
-                <a href="#beneficios">Benefícios</a>
-                <a href="#aplicacao">Aplicação</a>
-            </nav>
-    </header>
+    <main>
+        <header class="header">
+            <div class="container">
+                <div class="box">
+                    <a href="#hero" class="home">
+                        <span class="titulo">OrbitAlert</span>
+                    </a>
+                </div>
+                <nav class="nav">
+                    <a href="#problema">Problema</a>
+                    <a href="#tecnologia">Tecnologia</a>
+                    <a href="#objetivos">Objetivos</a>
+                    <a href="#audiencia">Audiência</a>
+                    <a href="#beneficios">Benefícios</a>
+                    <a href="#aplicacao">Aplicação</a>
+                </nav>
+        </header>
 
-    <section class="hero" id="hero">
-        <div class="container">
-            <div class="texto-hero">
-                <h1>Protegendo vidas <span class="degrade">através do espaço</span></h1>
-                <p>Monitoramos rios, florestas e condições climáticas em tempo real — combinando sensores no campo, comunicação sem fio e satélites da NASA para emitir alertas de enchentes e queimadas antes que seja tarde demais.</p>
-                <div class="btn-hero">
-                    <a href="#" class="btn btn--primary">Assista o vídeo</a>
-                    <a href="./pages/learnmore.html" class="btn--secondary">Saiba mais</a>
+        <section class="hero" id="hero">
+            <div class="container">
+                <div class="texto-hero">
+                    <h1>Protegendo vidas <span class="degrade">através do espaço</span></h1>
+                    <p>Monitoramos rios, florestas e condições climáticas em tempo real — combinando sensores no campo, comunicação sem fio e satélites da NASA para emitir alertas de enchentes e queimadas antes que seja tarde demais.</p>
+                    <div class="btn-hero">
+                        <a href="#" class="btn btn--primary">Assista o vídeo</a>
+                        <a href="./pages/learnmore.html" class="btn--secondary">Saiba mais</a>
+                    </div>
+                </div>
+
+                <div class="imagem-hero"> 
+                    <img src="./src/img/36a509dc-dc37-483f-af2f-a41ecaaa1918.jpeg" alt="Sistema de Alertas de enchentes e queimadas com hardware e satélites">
                 </div>
             </div>
+        </section>
 
-            <div class="imagem-hero"> 
-                <img src="./src/img/36a509dc-dc37-483f-af2f-a41ecaaa1918.jpeg" alt="Sistema de Alertas de enchentes e queimadas com hardware e satélites">
-            </div>
-        </div>
-    </section>
-
-    <section class="problem" id="problema">
-        <div class="container">
-            <div>
-                <h2>O que o <span class="degrade">OrbitAlert</span> resolve</h2>
-                <p>Enchentes e queimadas matam milhares de pessoas por ano no Brasil — na maioria dos casos porque o alerta chega tarde demais para que comunidades vulneráveis possam agir. O OrbitAlert monitora continuamente os sinais de risco e entrega o alerta em menos de 2 segundos, dando tempo para que pessoas saiam de áreas de perigo.</p>
-            </div>
-
-            <div class="problem_cards">
-                <article class="card">
-                    <i class="bx bx-announcement"></i>
-                    <h3>Alertas antes do desastre</h3>
-                    <p>Sensores no campo detectam a subida do rio e condições de queimada em tempo real, acionando o aviso sonoro e visual na base comunitária antes que a situação se torne irreversível.</p>
-                </article>
-
-                <article class="card">
-                    <i class="bx bx-satellite-dish"></i>
-                    <h3>Dados do espaço, ação no chão</h3>
-                    <p>Satélites da NASA e do INPE ampliam o alcance do sistema, cruzando dados locais com focos de incêndio e eventos climáticos detectados do espaço para calcular o risco com precisão.</p>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <section class="technology" id="tecnologia">
-        <div class="container">
-            <div class="sec-header">
-                <h2>Tecnologia do <span class="degrade">OrbitAlert</span></h2>
-                <p>Hardware inteligente, comunicação sem fio e inteligência satelital</p>
-            </div>
-
-            <div class="cards-3">
-                <article class="card">
-                    <i class="bx bx-broadcast"></i>
-                    <h3>Transmissor - Unidade de campo</h3>
-                    <p>Instalado próximo a rios e áreas de risco, o transmissor usa um ESP-32 com sensores DHT22, HC-SR04 e sensor de nível d'água para medir continuamente as condições do ambiente. Os dados são classificados localmente e enviados a cada 5 segundos via módulo NRF24L01.</p>
-                </article>
-                <article class="card">
-                    <i class="bx bx-signal-5"></i>
-                    <h3>Receptor - Unidade de base</h3>
-                    <p>Posicionado em escolas ou postos comunitários, o receptor opera com um ESP-32 conectado a um display TFT ST7789 que exibe o nível de alerta em cores — verde, amarelo, laranja ou vermelho piscante. Em situações críticas, um buzzer é acionado automaticamente.</p>
-                </article>
-                <article class="card">
-                    <i class="bx bx-code"></i>
-                    <h3>Software Python</h3>
-                    <p>Rodando em um computador na base, o software consome APIs gratuitas da NASA FIRMS, NASA EONET e Open-Meteo para calcular o risco regional por meio de um modelo matemático exponencial. Os resultados são salvos em histórico e podem ser exportados como relatório com gráficos.</p>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <section class="objectives" id="objectives">
-        <div class="container">
-            <div class="imagem-obj">
-                <img src="./src/img/2149174328.jpg" alt="board">
-            </div>
-            <article class="obj-texto">
-                <div class="obj-titulo">
-                    <h2>Objetivos do <span class="degrade">OrbitAlert</span></h2>
+        <section class="problem" id="problema">
+            <div class="container">
+                <div>
+                    <h2>O que o <span class="degrade">OrbitAlert</span> resolve</h2>
+                    <p>Enchentes e queimadas matam milhares de pessoas por ano no Brasil — na maioria dos casos porque o alerta chega tarde demais para que comunidades vulneráveis possam agir. O OrbitAlert monitora continuamente os sinais de risco e entrega o alerta em menos de 2 segundos, dando tempo para que pessoas saiam de áreas de perigo.</p>
                 </div>
-                <div class="obj-item">
-                    <h3>Alertas onde a internet não chega</h3>
-                    <p>- O OrbitAlert leva dados satelitais da NASA até um dispositivo físico local, sem internet, sem celular e sem cadastro — por R$ 340 por comunidade.</p>
-                </div>
-                <div class="obj-item">
-                    <h3>O problema que o governo ainda não resolveu</h3>
-                    <p>- O sistema oficial de alertas do Brasil exige 4G para funcionar, tornando-o invisível para os 14 milhões de brasileiros em áreas remotas sem cobertura móvel.</p>
-                </div>
-                <div class="obj-item">
-                    <h3>Tecnologia espacial acessível a qualquer comunidade</h3>
-                    <p>- Dados gratuitos de satélites da NASA, ESA e INPE processados por um algoritmo Python e entregues em hardware simples que qualquer professor ou agente de saúde consegue instalar em 2 horas.</p>
-                </div>
-            </article>
-        </div>
-    </section>
 
-    <section class="audience" id="audiencia">
-        <div class="container">
-            <div class="au-header">
-                <h2>Quem o <span class="degrade">OrbitAlert</span> proteje?</h2>
-            </div>
+                <div class="problem_cards">
+                    <article class="card">
+                        <i class="bx bx-announcement"></i>
+                        <h3>Alertas antes do desastre</h3>
+                        <p>Sensores no campo detectam a subida do rio e condições de queimada em tempo real, acionando o aviso sonoro e visual na base comunitária antes que a situação se torne irreversível.</p>
+                    </article>
 
-            <div class="au-cards">
-                <article class="au-left">
-                    <h3>Comunidades sem cobertura móvel</h3>
-                    <p>Mais de 20 milhões de brasileiros não possuem acesso a internet.</p>
-                </article>
-                
-                <div class="au-right">
-                    <article class="aucard aucard-up">
-                        <h4>Moradores de áreas de risco sem alerta offline</h3>
-                        <p>Cerca de 5.7 milhões de brasileiros em zonas de risco não recebem alertas emergenciais confiáveis.</p>
+                    <article class="card">
+                        <i class="bx bx-satellite-dish"></i>
+                        <h3>Dados do espaço, ação no chão</h3>
+                        <p>Satélites da NASA e do INPE ampliam o alcance do sistema, cruzando dados locais com focos de incêndio e eventos climáticos detectados do espaço para calcular o risco com precisão.</p>
                     </article>
                 </div>
-                
-                <div class="au-bottom">
-                    <article class="aucard aucard-down">
-                        <h4>Comunidades indígenas em áreas florestais</h3>
-                        <p>Aproximadamente 500 mil pessoas vivem em territórios isolados sem nenhum sistema de alerta físico.</p>
+            </div>
+        </section>
+
+        <section class="technology" id="tecnologia">
+            <div class="container">
+                <div class="sec-header">
+                    <h2>Tecnologia do <span class="degrade">OrbitAlert</span></h2>
+                    <p>Hardware inteligente, comunicação sem fio e inteligência satelital</p>
+                </div>
+
+                <div class="cards-3">
+                    <article class="card">
+                        <i class="bx bx-broadcast"></i>
+                        <h3>Transmissor - Unidade de campo</h3>
+                        <p>Instalado próximo a rios e áreas de risco, o transmissor usa um ESP-32 com sensores DHT22, HC-SR04 e sensor de nível d'água para medir continuamente as condições do ambiente. Os dados são classificados localmente e enviados a cada 5 segundos via módulo NRF24L01.</p>
+                    </article>
+                    <article class="card">
+                        <i class="bx bx-signal-5"></i>
+                        <h3>Receptor - Unidade de base</h3>
+                        <p>Posicionado em escolas ou postos comunitários, o receptor opera com um ESP-32 conectado a um display TFT ST7789 que exibe o nível de alerta em cores — verde, amarelo, laranja ou vermelho piscante. Em situações críticas, um buzzer é acionado automaticamente.</p>
+                    </article>
+                    <article class="card">
+                        <i class="bx bx-code"></i>
+                        <h3>Software Python</h3>
+                        <p>Rodando em um computador na base, o software consome APIs gratuitas da NASA FIRMS, NASA EONET e Open-Meteo para calcular o risco regional por meio de um modelo matemático exponencial. Os resultados são salvos em histórico e podem ser exportados como relatório com gráficos.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="objectives" id="objectives">
+            <div class="container">
+                <div class="imagem-obj">
+                    <img src="./src/img/2149174328.jpg" alt="Placa de circuito verde">
+                </div>
+                <article class="obj-texto">
+                    <div class="obj-titulo">
+                        <h2>Objetivos do <span class="degrade">OrbitAlert</span></h2>
+                    </div>
+                    <div class="obj-item">
+                        <h3>Alertas onde a internet não chega</h3>
+                        <p>- O OrbitAlert leva dados satelitais da NASA até um dispositivo físico local, sem internet, sem celular e sem cadastro — por R$ 340 por comunidade.</p>
+                    </div>
+                    <div class="obj-item">
+                        <h3>O problema que o governo ainda não resolveu</h3>
+                        <p>- O sistema oficial de alertas do Brasil exige 4G para funcionar, tornando-o invisível para os 14 milhões de brasileiros em áreas remotas sem cobertura móvel.</p>
+                    </div>
+                    <div class="obj-item">
+                        <h3>Tecnologia espacial acessível a qualquer comunidade</h3>
+                        <p>- Dados gratuitos de satélites da NASA, ESA e INPE processados por um algoritmo Python e entregues em hardware simples que qualquer professor ou agente de saúde consegue instalar em 2 horas.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="audience" id="audiencia">
+            <div class="container">
+                <div class="au-header">
+                    <h2>Quem o <span class="degrade">OrbitAlert</span> proteje?</h2>
+                </div>
+
+                <div class="au-cards">
+                    <article class="au-left">
+                        <h3>Comunidades sem cobertura móvel</h3>
+                        <p>Mais de 20 milhões de brasileiros não possuem acesso a internet.</p>
                     </article>
                     
-                    <article class="aucard aucard-right">
-                        <h4>Escolas e postos de saúde em regiões rurais</h3>
-                        <p>Mais de 8 mil escolas brasileiras ainda operam sem internet, totalmente desconectadas de alertas oficiais.</p>
-                    </article>
+                    <div class="au-right">
+                        <article class="aucard aucard-up">
+                            <h4>Moradores de áreas de risco sem alerta offline</h3>
+                            <p>Cerca de 5.7 milhões de brasileiros em zonas de risco não recebem alertas emergenciais confiáveis.</p>
+                        </article>
+                    </div>
+                    
+                    <div class="au-bottom">
+                        <article class="aucard aucard-down">
+                            <h4>Comunidades indígenas em áreas florestais</h3>
+                            <p>Aproximadamente 500 mil pessoas vivem em territórios isolados sem nenhum sistema de alerta físico.</p>
+                        </article>
+                        
+                        <article class="aucard aucard-right">
+                            <h4>Escolas e postos de saúde em regiões rurais</h3>
+                            <p>Mais de 8 mil escolas brasileiras ainda operam sem internet, totalmente desconectadas de alertas oficiais.</p>
+                        </article>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="beneficios" id="beneficios">
+        <section class="beneficios" id="beneficios">
+            <div class="container">
+                <div class="bene-header">
+                    <div>
+                        <h2>Por que o <span class="degrade">OrbitAlert</span> muda o jogo?</h2>
+                        <p>A solução que leva dado de satélites até o cidadão sem internet, celular ou infraestrutura de telecomunicações.</p>
+                    </div>
+                </div>
+
+                <div class="benefits-grid">
+                    <div class="benefits">
+                        <i class="bx bx-wifi-slash"></i>
+                        <h4>Funciona sem internet e sem celular</h4>
+                        <p>Opera com rádio de longo alcance, independente de qualquer operadora ou sinal.</p>
+                    </div>
+                    
+                    <div class="benefits">
+                        <i class="bx bx-currency-notes"></i>
+                        <h4>Custo acessível para qualquer prefeitura</h4>
+                        <p>Kit completo por R$ 340 - instalação única, sem mensalidade ou contrato</p>
+                    </div>
+                    
+                    <div class="benefits">
+                        <i class="bx bx-siren"></i>
+                        <h4>Alerta físico audível a 50 metros</h4>
+                        <p>Buzzer sonoro e display garantem que todos na comunidade ouçam</p>
+                    </div>
+                    
+                    <div class="benefits">
+                        <i class="bx bx-power"></i>
+                        <h4>Instalação sem técnico especializado</h4>
+                        <p>Professor ou agente de saúde instala em 2 horas seguindo manual simples</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
         <div class="container">
-            <div class="bene-header">
-                <div>
-                    <h2>Por que o <span class="degrade">OrbitAlert</span> muda o jogo?</h2>
-                    <p>A solução que leva dado de satélites até o cidadão sem internet, celular ou infraestrutura de telecomunicações.</p>
-                </div>
+            <div>
+                <div class="footer-nome">OrbitAlert</div>
+                <div class="footer-copy">© 2026 OrbitAlert</div>
             </div>
-
-            <div class="benefits-grid">
-                <div class="benefits">
-                    <i class="bx bx-wifi-slash"></i>
-                    <h4>Funciona sem internet e sem celular</h4>
-                    <p>Opera com rádio de longo alcance, independente de qualquer operadora ou sinal.</p>
-                </div>
-                
-                <div class="benefits">
-                    <i class="bx bx-currency-notes"></i>
-                    <h4>Custo acessível para qualquer prefeitura</h4>
-                    <p>Kit completo por R$ 340 - instalação única, sem mensalidade ou contrato</p>
-                </div>
-                
-                <div class="benefits">
-                    <i class="bx bx-siren"></i>
-                    <h4>Alerta físico audível a 50 metros</h4>
-                    <p>Buzzer sonoro e display garantem que todos na comunidade ouçam</p>
-                </div>
-                
-                <div class="benefits">
-                    <i class="bx bx-power"></i>
-                    <h4>Instalação sem técnico especializado</h4>
-                    <p>Professor ou agente de saúde instala em 2 horas seguindo manual simples</p>
-                </div>
-            </div>
+            <ul class="footer-membros">
+                <li>Gianluca (RM 570081)</li>
+                <li>Enzo Vieira (RM 569696)</li>
+                <li>João Vitor (RM 569510)</li>
+            </ul>
         </div>
-    </section>
+    </footer>
 </body>
 </html>
 
