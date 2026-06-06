@@ -325,8 +325,3 @@ Custo aproximado por kit: **R$ 337** — sem mensalidade, sem internet, sem celu
 | ENZO VIEIRA PROVENZANO | 569696 |
 | JOÃO VITOR RODRIGUEES COSTA | 569510 |
 
----
-
-## Licença
-
-Código aberto para fins acadêmicos — Global Solution 2026 · FIAP.
